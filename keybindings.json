@@ -2,13 +2,8 @@
     // VIM KEYBINDS START
     // FILE TREE 
     {
-        "command": "workbench.action.toggleSidebarVisibility",
-        "key": "ctrl+e"
-    },
-    {
-        "command": "workbench.files.action.focusFilesExplorer",
         "key": "ctrl+e",
-        "when": "editorTextFocus"
+        "command": "workbench.action.toggleSidebarVisibility"
     },
     {
         "key": "n",
@@ -16,8 +11,8 @@
         "when": "filesExplorerFocus && !inputFocus"
     },
     {
-        "command": "renameFile",
         "key": "r",
+        "command": "renameFile",
         "when": "filesExplorerFocus && !inputFocus"
     },
     {
@@ -26,8 +21,8 @@
         "when": "explorerViewletFocus"
     },
     {
-        "command": "deleteFile",
         "key": "d",
+        "command": "deleteFile",
         "when": "filesExplorerFocus && !inputFocus"
     },
     // EXTRA 
@@ -60,6 +55,27 @@
         "key": "shift+k",
         "command": "workbench.action.quickOpenNavigatePrevious",
         "when": "inQuickOpen"
+    },
+    // TERMINAL
+    {
+        "key": "ctrl+shift+`",
+        "command": "-workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+shift+;",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+;",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
     }
     // VIM KEYBINDS END 
 ]

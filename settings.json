@@ -18,7 +18,7 @@
                 "q"
             ],
             "commands": [
-                ":q!"
+                ":wq!"
             ]
         },
         {
@@ -37,6 +37,115 @@
             ],
             "commands": [
                 "editor.action.showDefinitionPreviewHover"
+            ]
+        },
+        // Activity-bar
+        {
+            "before": [
+                "leader",
+                "L"
+            ],
+            "commands": [
+                "workbench.action.toggleActivityBarVisibility"
+            ]
+        },
+        // File-tree
+        {
+            "before": [
+                "leader",
+                "e"
+            ],
+            "commands": [
+                "workbench.files.action.focusFilesExplorer"
+            ]
+        },
+        // Source-control
+        {
+            "before": [
+                "leader",
+                "j"
+            ],
+            "commands": [
+                "workbench.view.scm"
+            ]
+        },
+        // Debugging
+        {
+            "before": [
+                "leader",
+                "d",
+                "b"
+            ],
+            "commands": [
+                "workbench.view.debug"
+            ]
+        },
+        // Extensions
+        {
+            "before": [
+                "leader",
+                "x"
+            ],
+            "commands": [
+                "workbench.view.extensions"
+            ]
+        },
+        // Center when scrolling
+        {
+            "before": [
+                "c-d"
+            ],
+            "after": [
+                "M",
+                "c-d"
+            ]
+        },
+        {
+            "before": [
+                "c-u"
+            ],
+            "after": [
+                "M",
+                "c-u"
+            ]
+        },
+        // Navigating tabs
+        {
+            "before": [
+                "H"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        // vim-easymotion
+        {
+            "before": [
+                "leader",
+                "f"
+            ],
+            "after": [
+                "leader",
+                "leader",
+                "s"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "c",
+                "p"
+            ],
+            "commands": [
+                "copyWorkspaceFilePath"
             ]
         }
     ],
@@ -59,13 +168,52 @@
         },
         {
             "before": [
-                "leader",
                 "c"
             ],
             "commands": [
                 "editor.action.commentLine"
             ]
+        },
+        // vim-easymotion
+        {
+            "before": [
+                "leader",
+                "f"
+            ],
+            "after": [
+                "leader",
+                "leader",
+                "s"
+            ]
         }
-    ]
+    ],
+    "vim.sneak": true,
+    "vim.easymotion": true,
+    "vim.highlightedyank.enable": true,
+    "vim.showMarksInGutter": true,
     // VIM SETTINGS END
+    "editor.formatOnSave": true,
+    "editor.cursorSurroundingLines": 8,
+    "terminal.integrated.fontSize": 14,
+    "editor.lineNumbers": "relative",
+    // tab-size
+    "workbench.editor.tabSizing": "shrink",
+    "window.density.editorTabHeight": "compact",
+    "terminal.integrated.macOptionClickForcesSelection": true,
+    "editor.rulers": [
+        80
+    ],
+    "[go]": {
+        "editor.rulers": [
+            80,
+            100
+        ]
+    },
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.activityBar.location": "top",
+    "notifications.position": "right",
+    "workbench.layoutControl.enabled": false,
+    "chat.commandCenter.enabled": false,
+    "window.menuBarVisibility": "compact",
+    "terminal.integrated.tabs.enabled": false
 }
